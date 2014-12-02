@@ -1,9 +1,9 @@
 <?php
 
 /*
-Plugin Name: Slate Admin Theme
+Plugin Name: Slate-Kit
 Plugin URI: https://github.com/ryansommers/slate
-Description: A clean, simplified WordPress Admin theme
+Description: A minimal clean, simplified WordPress Admin theme
 Author: Ryan Sommers
 Version: 1.0.8
 Author URI: http://ryansommers.com
