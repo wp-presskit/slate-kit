@@ -4,17 +4,17 @@
 Plugin Name: Slate-Kit
 Plugin URI: https://github.com/ryansommers/slate
 Description: A minimal clean, simplified WordPress Admin theme
-Author: Ryan Sommers
+Link: Ryan Sommers
 Version: 1.0.8
 Author URI: http://ryansommers.com
 */
 
-function slate_theme_files() {
-  wp_enqueue_style( 'slate-admin-theme', plugins_url('slate.css', __FILE__), array(), '1.0.8' );
+function slate_kit_theme_files() {
+  wp_enqueue_style( 'slate-kit-admin-theme', plugins_url('slate-kit.css', __FILE__), array(), '1.0.8' );
   wp_enqueue_script( 'slate', plugins_url( "js/slate.js", __FILE__ ), array( 'jquery' ), '1.0.8', true );
 }
-add_action( 'admin_enqueue_scripts', 'slate_theme_files' );
-add_action( 'login_enqueue_scripts', 'slate_theme_files' );
+add_action( 'admin_enqueue_scripts', 'slate_kit_theme_files' );
+add_action( 'login_enqueue_scripts', 'slate_kit_theme_files' );
 
 function slate_theme_add_editor_styles() {
     add_editor_style( plugins_url('editor-style.css', __FILE__ ) );
