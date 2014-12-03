@@ -90,7 +90,7 @@ html.wp-toolbar {
 /* *********************** */
 #wpadminbar {
   background: @background-adminbar;
-  color: #ccc;
+  color: red;
   height: 61px;
   left: 200px;
   padding: 0 10px;
@@ -144,6 +144,11 @@ html.wp-toolbar {
   }
 }
 
+#wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+  color: @color-adminbar;
+
+}
+
 /* *********************** */
 /* Notices */
 /* *********************** */
@@ -160,7 +165,7 @@ div.updated {
 }
 
 /* *********************** */
-/* Admin Menu */
+/* Admin Menu / admin-sidebar */
 /* *********************** */
 
 #adminmenuback,
@@ -191,7 +196,7 @@ div.updated {
   }
 }
 #adminmenu .wp-submenu {
-  background: @background-admin-submenu;
+  background: @background-sidebar-submenu;
   border-radius: 0 2px 2px 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -351,14 +356,15 @@ div.updated {
   left: 200px;
 }
 #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
-  border-right-color: @background-admin-submenu;
+  border-right-color: @background-sidebar-submenu;
 }
 ul#adminmenu a.wp-has-current-submenu:after,
 ul#adminmenu>li.current>a.current:after {
   border-right-color: #fff;
 }
+//******************************* Sidebar color
 #adminmenu li.wp-menu-separator {
-  border-top: 1px solid #222;
+  border-top: 1px solid @border-sidebar-color;
   height: 1px;
   margin: 14px auto 15px auto;
 }
