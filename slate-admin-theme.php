@@ -27,4 +27,3 @@ function left_admin_footer_text_output($text) {
   return $text;
 }
 
-?>
