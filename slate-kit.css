@@ -941,14 +941,14 @@ table.comments .alternate,
 /* Footer */
 /* *********************** */
 #wpfooter {
-  background: #444343;
-  color: #999;
+  background: #ffffff;
+  color: #747373;
   margin-left: 200px;
 }
 #wpfooter a {
-  color: #999;
+  color: #5a5a5a;
   text-decoration: underline;
 }
 #wpfooter a:hover {
-  color: #fff;
+  color: #0e0d0d;
 }
