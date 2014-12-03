@@ -7,21 +7,32 @@
 @background-login-form: #fff;
 @background-wrap: #fff;
 //------------------------------
-@background-adminbar: #444343;
-@background-admin-sidebar: #302d2d;
-@background-admin-sidebar-folded: #ea5340;
+
+
 @background-error: #ebf7e3;
-@background-admin-submenu: #2ea2cc;
 @background-tiny-mce: #fff;
-//-------- colors ------------
-@color-adminbar: #ccc;
+
+// ************************** adminbar
+@background-adminbar: lighten( #EEECEC, 5% );
+@color-adminbar: #9f9f9f;
 @color-adminbar-active: #ccc;
 @color-adminbar-hover: #ccc;
-//----------------------------
+
+// *************************** sidebar
+//************************************
+
+@background-admin-sidebar: #302d2d;
+@background-admin-sidebar-folded: #ea5340;
 @color-sidebar: #ccc;
 @color-sidebar-active: #ea5340;
 @color-sidebar-hover: #2ea2cc;
+@background-sidebar-submenu: #2ea2cc;
+@border-sidebar-color: darken(@background-admin-sidebar, 20%);
 
 
+//**************************** footer
 
-
+@background-footer: #FFF;
+@color-footer: #747373;
+@color-footer-a: darken(@color-footer, 10%);
+@color-footer-hover: darken(@color-footer, 40%);
