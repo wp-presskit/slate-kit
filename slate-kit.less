@@ -1,6 +1,8 @@
 /** created by shawn sandy **/
 
 @import "assets/less/variables";
+@import "assets/less/mixins";
+@import "bower_components/lesshat/build/lesshat";
 
 
 html.wp-toolbar {
@@ -163,39 +165,24 @@ div.updated {
 
 #adminmenuback,
 #adminmenuwrap {
-  background: @background-admin-menu;
-  background-image: -moz-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: -o-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: -webkit-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: linear-gradient(to left, #232121 0%, #302d2d 5%, #302d2d 100%);
+  background: @background-admin-sidebar;
+  .gradient-adminmenu;
   width: 200px;
 }
 @media only screen and (max-width: 960px) {
-  #adminmenuback,
-  #adminmenuwrap {
-    background: #302d2d;
-    background-image: -moz-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: -o-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: -webkit-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: linear-gradient(to left, #232121 0%, #302d2d 30%, #302d2d 100%);
+  #adminmenuback{
+      .gradient-adminmenu;
   }
 }
 #adminmenu {
   background: #302d2d;
-  background-image: -moz-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: -o-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: -webkit-linear-gradient(right, #232121 0%, #302d2d 5%, #302d2d 100%);
-  background-image: linear-gradient(to left, #232121 0%, #302d2d 5%, #302d2d 100%);
+  .gradient-adminmenu;
   margin: 12px 0;
   width: 200px;
 }
 @media only screen and (max-width: 960px) {
   #adminmenu {
-    background: #302d2d;
-    background-image: -moz-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: -o-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: -webkit-linear-gradient(right, #232121 0%, #302d2d 30%, #302d2d 100%);
-    background-image: linear-gradient(to left, #232121 0%, #302d2d 30%, #302d2d 100%);
+    .gradient-adminmenu;
   }
 }
 @media screen and (max-width: 782px) {
@@ -204,7 +191,7 @@ div.updated {
   }
 }
 #adminmenu .wp-submenu {
-  background: #2ea2cc;
+  background: @background-admin-submenu;
   border-radius: 0 2px 2px 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -364,7 +351,7 @@ div.updated {
   left: 200px;
 }
 #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
-  border-right-color: #2ea2cc;
+  border-right-color: @background-admin-submenu;
 }
 ul#adminmenu a.wp-has-current-submenu:after,
 ul#adminmenu>li.current>a.current:after {
