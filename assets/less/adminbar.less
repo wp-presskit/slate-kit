@@ -1,0 +1,34 @@
+/********** Shawn Sandy ************/
+
+
+.adminbar() {
+  #wpadminbar {
+
+
+    direction: ltr;
+    color: darken(@menu-background, 70%);
+    font: 400 13px/32px "Open Sans",sans-serif;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 160px;
+    width: 100%;
+    min-width: 600px;
+    z-index: 99999;
+    background: @menu-background;
+    border-bottom: 1px solid darken(@menu-background, 20%);
+    border-left: 1px solid darken(@menu-background, 20%);
+    padding-top: 5px;
+    box-sizing: border-box;
+
+    a.ab-item, &>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+      color: darken(@menu-background, 70%);
+    }
+
+    a.ab-item, &>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+      color: blue;
+    }
+
+
+  }
+}

@@ -1,12 +1,31 @@
-/****** created by shawn sandy *******/
+/****** admin bar *******/
 /********** Shawn Sandy ************/
 /* admin-menu */
+/********** Shawn Sandy ************/
+/********** Shawn Sandy ************/
+html.wp-toolbar {
+  padding-top: 0;
+}
+#wpwrap {
+  background-color: #fafafa;
+}
+#wpcontent {
+  padding-left: 0;
+}
+#wpcontent #wpbody {
+  border-left: 1px solid #c7c7c7;
+  box-sizing: border-box !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
 #adminmenuback,
 #adminmenuwrap,
 #adminmenu,
 #adminmenu .wp-submenu {
   width: 160px;
-  background-color: #222;
+  background-color: #fafafa;
+  border-right: 1px solid #c7c7c7;
 }
 #adminmenu {
   margin-top: 0;
@@ -26,8 +45,8 @@ div.wp-menu-name {
 }
 #adminmenu #adminmenuback,
 #adminmenu #adminmenuwrap {
-  background-color: #58595b;
-  border-color: #fff;
+  background-color: #fafafa;
+  border-color: #e1e1e1;
   padding-top: 0;
 }
 #adminmenu #adminmenu .wp-submenu .wp-submenu-head {
@@ -40,12 +59,12 @@ div.wp-menu-name {
 #adminmenu li.menu-top:hover,
 #adminmenu #adminmenu li.opensub > a.menu-top,
 #adminmenu li > a.menu-top:focus {
-  background-color: #58595b;
+  background-color: #fafafa;
   color: #d54e21;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 #adminmenu li.wp-menu-separator {
-  background: #58595b;
+  background: #fafafa;
   border-color: #fff;
   height: 1px;
 }
@@ -53,7 +72,7 @@ div.wp-menu-name {
 #adminmenu li.menu-top:hover,
 #adminmenu li.opensub > a.menu-top,
 #adminmenu li > a.menu-top:focus {
-  color: #fff;
+  color: #484848;
 }
 #adminmenu a:hover,
 #adminmenu a:active {
@@ -78,4 +97,31 @@ div.wp-menu-name {
 #adminmenu li.wp-has-current-submenu .wp-menu-arrow,
 #adminmenu li.wp-has-current-submenu .wp-menu-arrow div {
   background: #9e4059;
+}
+#wpadminbar {
+  direction: ltr;
+  color: #484848;
+  font: 400 13px/32px "Open Sans", sans-serif;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 160px;
+  width: 100%;
+  min-width: 600px;
+  z-index: 99999;
+  background: #fafafa;
+  border-bottom: 1px solid #c7c7c7;
+  border-left: 1px solid #c7c7c7;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar #wpadminbar > #wp-toolbar span.noticon {
+  color: #484848;
+}
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar #wpadminbar > #wp-toolbar span.noticon {
+  color: blue;
 }

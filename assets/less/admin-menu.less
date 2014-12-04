@@ -9,7 +9,8 @@
   #adminmenu,
   #adminmenu .wp-submenu {
     width: 160px;
-    background-color: #222;
+    background-color: @menu-background;
+    border-right: 1px solid darken(@menu-background, 20%);
   }
 
   #adminmenu {
@@ -36,8 +37,8 @@
 
   /* background and text color */
   #adminmenuback, #adminmenuwrap {
-    background-color: #58595b;
-    border-color: #fff;
+    background-color: @menu-background;
+    border-color: darken(@menu-background, 10%);
     padding-top: 0;
   }
 
@@ -51,12 +52,12 @@
   }
 
   li.menu-top:hover, #adminmenu li.opensub > a.menu-top, li > a.menu-top:focus {
-    background-color: #58595b;
+    background-color: @menu-background;
     color: #d54e21;
     text-shadow: 0 1px 0 rgba(255,255,255,0.4);
   }
   li.wp-menu-separator {
-    background: #58595b;
+    background: @menu-background;
     border-color: #fff;
     height: 1px;
   }
@@ -66,7 +67,7 @@
   li.menu-top:hover,
   li.opensub > a.menu-top,
   li > a.menu-top:focus {
-    color: #fff;
+    color: darken(@menu-background, 70%);
   }
   a:hover,
   a:active {
