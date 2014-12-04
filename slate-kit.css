@@ -1,4 +1,4 @@
-/** created by shawn sandy **/
+/****** created by shawn sandy *******/
 /********** Shawn Sandy ************/
 /* admin-menu */
 #adminmenuback,
@@ -152,7 +152,7 @@
 #adminmenu li.menu-top > a:focus,
 #adminmenu .wp-submenu a:hover,
 #adminmenu .wp-submenu a:focus {
-  color: #007cb9;
+  color: #ea5340;
 }
 #adminmenu li.menu-top {
   border: none;
